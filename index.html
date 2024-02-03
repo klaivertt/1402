@@ -83,7 +83,7 @@
     </div>
     
 <div id="buttons-container">
-    <button id="yes-button" class="button1">Yes</button>
+    <button id="yes-button" class="button1" onclick="redirectToNewPage()">Yes</button>
     <button id="no-button" class="button2" onclick="changeNoText()">No</button>
 </div>
 
@@ -100,7 +100,8 @@
         "Tu plaisantes, non",
         "Pas d'accord.",
         "Impossible.",
-        "Je ne pense pas."
+        "Je ne pense pas.",
+        "Tu nes pas interessant.",
     ];
     let currentIndex = 0;
     let scaleValue = 1.0;
@@ -111,6 +112,11 @@
         scaleValue += 0.2;
         yesButton.style.transform = `scale(${scaleValue})`;
     }
+
+    function redirectToNewPage() {
+            // Rediriger vers une nouvelle page HTML
+            window.location.href = 'love.html';
+        }
 </script>
 
 </body>

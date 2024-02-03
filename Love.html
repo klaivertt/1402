@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ffcccb, #ffb6c1); /* Dégradé de couleur rose à rouge */
+        }
+
+        #main-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff; /* Couleur du texte principale en blanc */
+        }
+
+
+        #gif-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1; /* Pour s'assurer que le gif est au-dessus de tout le reste */
+        }
+
+        #valentine-gif {
+            max-width: 50%;
+            max-height: 50%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gif-container">
+        <img id="valentine-gif" src="funny-lol.gif" alt="Valentine Gif">
+    </div>
+    
+    <div id="main-text">
+        On fait quoi alors ce 14 février ?
+    </div>  
+</body>
+</html>
